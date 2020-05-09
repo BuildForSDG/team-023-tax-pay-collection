@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="">
+
+  <title data-dashboard-name ></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" data-project-name></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Logout</a></li>
+          <li><a data-toggle="tab" href="#settings">Settings</a></li>
+          <li><a data-toggle="tab" href="#help">Help</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="margin-top: 50px;">
+    <div class="row">
+
+      <div class="col-md-2">
+
+        <ul class="nav nav-sidebar">
+          <li><a data-toggle="tab" href="#profile">Profile</a></li>
+          <li><a data-toggle="tab" href="#paymenthistory">Payment History</a></li>
+          <li><a data-toggle="tab" href="#wallet">Wallet</a></li>
+        </ul>
+
+        <ul class="nav nav-sidebar">
+          <li><a data-toggle="tab" href="#paytaxrevenue">Pay Tax / Revenue</a></li>
+          <li><a data-toggle="tab" href="#taxcalculator">Tax Calculator</a></li>
+          <li><a data-toggle="tab" href="#entitlement">Entitlement</a></li>
+          <li><a data-toggle="tab" href="#notification">Notification</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a data-toggle="tab" href="#verification">Verification</a></li>
+          
+        </ul>
+
+      </div>
+
+      <div class="col-md-10">
+
+        <h1 class="page-header text-center" data-dashboard></h1>
+
+        <div class="tab-content">
+
+          <div id="profile" class="tab-pane fade in active">
+            <h3>Profile<a href="" class="btn btn-primary pull-right">Edit</a></h3>
+            <p class="text-center"><img src="../images/ali.jpg" alt="mypic" class="img-circle" height="100px", width="100px"></p>
+            
+            <form id='form1'>
+              <div class="form-group">
+                
+                <input type="text" name='fullname' class="form-control" id="fullname" value="Aliyu Bello" readonly>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name='address' class="form-control" id="address" value="# 704 TSG-Makama Kano" readonly>
+              </div>
+
+              <div class="form-group">
+                <input type="email" name='email' class="form-control" id="email" value="aliyubababello@gmail.com" readonly>
+              </div>
+
+              <div class="form-group">
+                <input type="number" name='phonenumber' class="form-control" id="phonenumber" value="07016807004">
+              </div>
+              <div class="form-group">
+                <input type="text" name='businessname' class="form-control" id="businessname" value="Mujaware Technologies" readonly>
+              </div>
+              <div class="form-group">
+                <input type="date" name='date_of_creation' class="form-control" id="date_of_creation" value="01/02/2020" readonly>
+              </div>
+              <div class='text-center'>
+                <button type="submit" class="btn btn-primary">Update</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="paymenthistory" class="tab-pane fade">
+            <h3>Payment History</h3>
+            <h4 class="text-center">Invoice</h4>
+            <div>
+              <table class="table table-striped table-responsive">
+                <tr>
+              <thead><th>Product Name</th><th>Quantity</th><th>Price(N)</th><th>Time</th><th>Status</th><th></th></thead>
+               </tr>
+              <tbody>
+                <tr>
+                <td>Tax</td> <td>1</td><td>5000</td><td>01/02/2020</td><td>Success</td><td><button class="btn btn-primary">Print invoice</button></td>
+              </tr>
+                <tr>
+                <td>Tax</td> <td>1</td><td>5000</td><td>01/02/2020</td><td>Failed</td><td><button class="btn btn-primary"> Print invoice</button></td>
+              </tr>
+              </tbody>
+            </table>
+            </div>
+            
+          </div>
+
+          <div id="pointhistory" class="tab-pane fade">
+            <h3>Point History</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam.</p>
+          </div>
+
+          <div id="wallet" class="tab-pane fade text-center">
+            <h3>Wallet</h3>
+            <p><span>Amount:</span> <span>1000</span> <span>Point:</span>  <span>400</span></p>
+            
+          </div>
+
+          <div id="paytaxrevenue" class="tab-pane fade">
+            <h3 class="text-center">Pay Tax/Revenue</h3>
+            <h3>Payment Methods <span class="pull-right">Amount Due: <em>20,000</em></span></h3>
+            <p>Choose your payment method below:</p>
+            <h4>Card Payment</h4>
+            <p><button class="btn btn-primary">Pay with Card</button></p>
+            <h4>Wallet Payment</h4>
+            <p><button class="btn btn-primary">Pay with Wallet</button></p>
+            <h4>Cash Payment</h4>
+            <h5>Collection Office</h5>
+            <p>Visit: # 123 Yandutse Road Nassarawa Kano State</p>
+          </div>
+
+          <div id="settings" class="tab-pane fade">
+            <h3>Setting</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+          </div>
+
+          <div id="taxcalculator" class="tab-pane fade">
+            <h3>Tax Calculator</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam.</p>
+          </div>
+
+          <div id="entitlement" class="tab-pane fade">
+            <h3>Entitlement</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+
+          <div id="notification" class="tab-pane fade">
+            <h3>Notification</h3>
+            <p class="text-center">No new notification</p>
+          </div>
+
+          <div id="verification" class="tab-pane fade">
+            <h3>Verification</h3>
+
+            <h4>Tax Office</h4>
+            <p>Visit: # 123 Yandutse Road Nassarawa Kano State</p>
+
+            <h4>Online</h4>
+            <form>
+            <div class="form-group"><input type="search" name="search" id="search" placeholder="Search"> <button class="btn btn-primary">Search</button></div>
+            </form>
+
+          </div>
+
+          <div id="help" class="tab-pane fade">
+            <h3>Help & Feedback</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of container -->
+
+   <script src="./dashboard.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
