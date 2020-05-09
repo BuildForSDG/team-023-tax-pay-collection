@@ -1,3 +1,3 @@
-const app = async () => 'Project Name';
+const app = async () => 'Tax Collection';
 
 export default app;
